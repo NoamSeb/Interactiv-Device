@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} !on
+RewriteCond %{HTTP_HOST} ^(?:www.)?http://ar.noamsebahoun.fr(?:.)$ [nc]
+RewriteRule ^(.)$ https://%{HTTP_HOST}%{REQUEST_URI} [redirect=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+RewriteRule ^home$ default.php
+
+ErrorDocument 404 ./404

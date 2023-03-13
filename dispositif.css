@@ -1,0 +1,113 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+}
+
+nav img {
+    width: 20vw;
+    height: auto;
+    margin: 10px;
+}
+
+.list {
+    margin: 0;
+    color: white;
+    width: 60vw;
+}
+
+.list ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+.ariane {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.mainSite p{
+    margin-left: 2%;
+}
+.arianePass {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+.titleQR {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    width: 60%;
+}
+
+.title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    font-weight: 100;
+    margin-left: 5%;
+}
+.title p{
+    margin-left: 5%;
+}
+.qr{
+    margin-left: 5%;
+}
+.qr img{
+    width: 50%;
+    height: auto;
+}
+
+.dispositifInteractif {
+    display: none;
+}
+ol{
+    color:white;
+}
+ol a{
+    color:white;
+    text-decoration:underline;
+}
+ol a:hover{
+    color:lightpink;
+}
+@media screen and (max-width:900px) {
+    .mainSite {
+        display: none !important;
+    }
+
+    .dispositifInteractif {
+        display: block !important;
+    }
+}
