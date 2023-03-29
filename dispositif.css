@@ -89,9 +89,9 @@ a {
     height: auto;
 }
 
-.dispositifInteractif {
+/* .dispositifInteractif {
     display: none;
-}
+} */
 ol{
     color:white;
 }
@@ -102,7 +102,7 @@ ol a{
 ol a:hover{
     color:lightpink;
 }
-@media screen and (max-width:900px) {
+/* @media screen and (max-width:900px) {
     .mainSite {
         display: none !important;
     }
@@ -110,4 +110,12 @@ ol a:hover{
     .dispositifInteractif {
         display: block !important;
     }
+} */
+.speaker{
+    position: absolute;
+    z-index: 1000;
+    width: 5%;
+    height: auto;
+    right:2%;
+    bottom: 2%;
 }
